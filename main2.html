@@ -1,0 +1,114 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>课程概览</title>
+        <meta name="description" content="课程概览">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#example-navbar-collapse">
+         <span class="sr-only">切换导航</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">计算机网络</a>
+      <div class="collapse navbar-collapse" id="example-navbar-collapse" style="float: right;">
+      <ul class="nav navbar-nav">
+         <li><a href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C">Wiki</a></li>
+         <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               课程列表 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">课程设计任务书</a></li>
+               <li class="divider"></li>
+               <li><a href="#">应用层</a></li>
+               <li><a href="#">传输层</a></li>
+               <li><a href="#">网络层</a></li>
+               <li><a href="#">数据链路层</a></li>
+               <li><a href="#">应用层</a></li>
+               <li class="divider"></li>
+            </ul>
+            </li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+               下载列表 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="https://github.com/BlackSweater/netProject/tree/gh-pages">本站源码</a></li>
+               <li class="divider"></li>
+               <li><a href="#">相关PDF</a></li>
+               <li class="divider"></li>
+            </ul>
+         </li>
+      </ul>
+   		</div>
+      </div>
+	</nav>
+    <div class="jumbotron"; style=" margin: 0 auto;height: 400px;background-color: #f8f8f8;background-image:url(img/01.jpg);background-repeat:no-repeat;background-size: cover;margin-top: ">
+      <div class="container">
+        <h1>TCP/IP五层模型</h1>
+        <p>TCP/IP模型是一系列网络协议的总称，这些协议的目的，就是使计算机之间可以进行信息交换。所谓“协议”可以理解成机器之间交谈的语言，每一种协议都有自己的目的。TCP/IP模型一共包括几百种协议，对互联网上交换信息的各个方面都做了规定。</p>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 20px">
+      <!-- Example row of columns -->
+      <div class="row">
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">应用层 &raquo;</a></p>
+      <p>该层包括所有和应用程序协同工作，利用基础网络交换应用程序专用的数据的协议。 应用层是大多数普通与网络相关的程序为了通过网络与其他程序通信所使用的层。这个层的处理过程是应用特有的；数据从网络相关的程序以这种应用内部使用的格式进行传送，然后被编码成标准协议的格式。</p>
+      </div>
+      <hr>
+      <div class="row">
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">传输层 &raquo;</a></p>
+      <p>传输层的协议，能够解决诸如端到端可靠性（“数据是否已经到达目的地？”）和保证数据按照正确的顺序到达这样的问题。在TCP/IP协议组中，传输协议也包括所给数据应该送给哪个应用程序。 在TCP/IP协议组中技术上位于这个层的动态路由协议通常被认为是网络层的一部分；一个例子就是OSPF（IP协议89）。 TCP（IP协议6）是一个“可靠的”、面向连结的传输机制，它提供一种可靠的字节流保证数据完整、无损并且按顺序到达。</p>
+      </div>
+      <hr>
+      <div class="row">
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">网络层 &raquo;</a></p>
+      <p>正如最初所定义的，网络层解决在一个单一网络上传输数据包的问题。类似的协议有X.25和ARPANET的Host/IMP Protocol。 随着因特网思想的出现，在这个层上添加附加的功能，也就是将数据从源网络传输到目的网络。这就牵涉到在网络组成的网上选择路径将数据包传输，也就是因特网。 在因特网协议组中，IP完成数据从源发送到目的的基本任务。</p>
+      </div>
+      <hr>
+      <div class="row">
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">链路层 &raquo;</a></p>
+      <p>在两个网络实体之间提供数据链路连接的创建、维持和释放管理。构成数据链路数据单元（frame：数据帧或帧），并对帧定界、同步、收发顺序的控制。传输过程中的流量控制,差错检测和差错控制等方面。 只提供导线的一端到另一端的数据传输。</p>
+      </div>
+      <hr>
+      <div class="row">
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">物理层 &raquo;</a></p>
+      <p>物理层规定:为传输数据所需要的物理链路创建、维持、拆除，而提供具有机械的，电子的，功能的和规范的特性。简单的说，物理层确保原始的数据可在各种物理媒体上传输。</p>
+      </div>
+      <hr>
+    </div>
+
+    </div> <!-- /container -->        
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
